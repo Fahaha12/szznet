@@ -18,21 +18,19 @@ from model.lung_classification_model import ModelSwinTransformer, OnlyPhenotypic
 from model.SwinTransformer import SwinTransformerForRegression
 from utils import ramps
 from utils.classification_data import LungDatasetForClassificationWithPhenotypic, \
-    lung_classification_with_phenotypic_collate, LungDatasetForSemiSupervisedClassificationWithPhenotypic
+    lung_classification_with_phenotypic_collate, LungDatasetForSemiSupervisedClassificationWithPhenotypic, LungDatasetForRegression
 from utils.meter import AverageMeter
 
 logger = logging.getLogger(__name__)
 global_step = 0
 
-
 def main():
     parser = argparse.ArgumentParser(description='MultiViewBreastCancerDetection')
 
-    parser.add_argument('--data-path', default=r'BraTS', type=str, help='data path')
+    parser.add_argument('--data-path', default=r'B1', type=str, help='data path')
     parser.add_argument('--out-path', default=r'result', help='directory to output the result')
     parser.add_argument('--txt-path', default=r'Output',
                         help='directory to output the result')
-
     parser.add_argument('--gpu-id', default=0, type=int, help='visible gpu id(s)')
     parser.add_argument('--num-workers', default=4, type=int, help='number of workers')
     parser.add_argument('--epochs', default=300, type=int, help='number of total steps to run')
@@ -81,7 +79,7 @@ def main():
     input_shape = (args.input_height, args.input_width)
 
     dataset_name = args.data_path.split('/')[-1]
-    if dataset_name == 'BraTS':
+    if dataset_name == 'B1':
         if args.model_type == 'swin_transformer':
             # 划分训练集和验证集
             k = 10
@@ -283,13 +281,22 @@ def main():
                 loss_function = nn.MSELoss()
 
                 # 创建数据集和数据加载器
-                train_dataset = LungDatasetForRegression(args.data_path, case_names=train_case_names, is_train=True)
-                val_dataset = LungDatasetForRegression(args.data_path, case_names=val_case_names, is_train=False)
-                test_dataset = LungDatasetForRegression(args.data_path, case_names=test_case_names, is_train=False)
+                train_dataset = LungDatasetForRegression(
+                    root_dir=args.data_path, 
+                    input_shape=(args.input_height, args.input_width),  # 提供正确的 input_shape
+                    case_names=train_case_names, 
+                    is_train=True
+                )
+                val_dataset = LungDatasetForRegression(
+                    root_dir=args.data_path, 
+                    input_shape=(args.input_height, args.input_width),  # 提供正确的 input_shape
+                    case_names=val_case_names, 
+                    is_train=False
+                )
+
 
                 train_dataloader = DataLoader(train_dataset, batch_size=args.batch_size, num_workers=args.num_workers, shuffle=True)
                 val_dataloader = DataLoader(val_dataset, batch_size=args.batch_size, num_workers=args.num_workers, shuffle=False)
-                test_dataloader = DataLoader(test_dataset, batch_size=args.batch_size, num_workers=args.num_workers, shuffle=False)
 
                 # 学习率调整策略
                 lr_scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=5, eta_min=1e-5)

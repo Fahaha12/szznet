@@ -91,3 +91,464 @@
 07/15/2024 18:01:17 - INFO - root -   Epoch [68/300] - Training MSE: 121815.0021 - Validation MSE: 107686.8125
 07/15/2024 18:01:54 - INFO - root -   Epoch [69/300] - Training MSE: 122253.4339 - Validation MSE: 107795.0737
 07/15/2024 18:02:31 - INFO - root -   Epoch [70/300] - Training MSE: 121452.9351 - Validation MSE: 107389.8147
+07/16/2024 17:26:59 - INFO - root -   Hyperparameters:
+07/16/2024 17:26:59 - INFO - root -   data_path: BraTS
+07/16/2024 17:26:59 - INFO - root -   out_path: result
+07/16/2024 17:26:59 - INFO - root -   txt_path: Output
+07/16/2024 17:26:59 - INFO - root -   gpu_id: 0
+07/16/2024 17:26:59 - INFO - root -   num_workers: 4
+07/16/2024 17:26:59 - INFO - root -   epochs: 300
+07/16/2024 17:26:59 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 17:26:59 - INFO - root -   ema_decay: 0.999
+07/16/2024 17:26:59 - INFO - root -   consistency: True
+07/16/2024 17:26:59 - INFO - root -   consistency_rampup: 30
+07/16/2024 17:26:59 - INFO - root -   warm_up_epochs: 10
+07/16/2024 17:26:59 - INFO - root -   batch_size: 128
+07/16/2024 17:26:59 - INFO - root -   lr: 0.0001
+07/16/2024 17:26:59 - INFO - root -   weight_decay: 0.0005
+07/16/2024 17:26:59 - INFO - root -   nesterov: True
+07/16/2024 17:26:59 - INFO - root -   momentum: 0.9
+07/16/2024 17:26:59 - INFO - root -   input_width: 224
+07/16/2024 17:26:59 - INFO - root -   input_height: 224
+07/16/2024 17:26:59 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 17:26:59 - INFO - root -   cosine_lr: False
+07/16/2024 17:26:59 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 17:26:59 - INFO - root -   log_path: training.log
+07/16/2024 17:33:31 - INFO - root -   Hyperparameters:
+07/16/2024 17:33:31 - INFO - root -   data_path: BraTS
+07/16/2024 17:33:31 - INFO - root -   out_path: result
+07/16/2024 17:33:31 - INFO - root -   txt_path: Output
+07/16/2024 17:33:31 - INFO - root -   gpu_id: 0
+07/16/2024 17:33:31 - INFO - root -   num_workers: 4
+07/16/2024 17:33:31 - INFO - root -   epochs: 300
+07/16/2024 17:33:31 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 17:33:31 - INFO - root -   ema_decay: 0.999
+07/16/2024 17:33:31 - INFO - root -   consistency: True
+07/16/2024 17:33:31 - INFO - root -   consistency_rampup: 30
+07/16/2024 17:33:31 - INFO - root -   warm_up_epochs: 10
+07/16/2024 17:33:31 - INFO - root -   batch_size: 128
+07/16/2024 17:33:31 - INFO - root -   lr: 0.0001
+07/16/2024 17:33:31 - INFO - root -   weight_decay: 0.0005
+07/16/2024 17:33:31 - INFO - root -   nesterov: True
+07/16/2024 17:33:31 - INFO - root -   momentum: 0.9
+07/16/2024 17:33:31 - INFO - root -   input_width: 224
+07/16/2024 17:33:31 - INFO - root -   input_height: 224
+07/16/2024 17:33:31 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 17:33:31 - INFO - root -   cosine_lr: False
+07/16/2024 17:33:31 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 17:33:31 - INFO - root -   log_path: training.log
+07/16/2024 17:36:00 - INFO - root -   Hyperparameters:
+07/16/2024 17:36:00 - INFO - root -   data_path: BraTS
+07/16/2024 17:36:00 - INFO - root -   out_path: result
+07/16/2024 17:36:00 - INFO - root -   txt_path: Output
+07/16/2024 17:36:00 - INFO - root -   gpu_id: 0
+07/16/2024 17:36:00 - INFO - root -   num_workers: 4
+07/16/2024 17:36:00 - INFO - root -   epochs: 300
+07/16/2024 17:36:00 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 17:36:00 - INFO - root -   ema_decay: 0.999
+07/16/2024 17:36:00 - INFO - root -   consistency: True
+07/16/2024 17:36:00 - INFO - root -   consistency_rampup: 30
+07/16/2024 17:36:00 - INFO - root -   warm_up_epochs: 10
+07/16/2024 17:36:00 - INFO - root -   batch_size: 128
+07/16/2024 17:36:00 - INFO - root -   lr: 0.0001
+07/16/2024 17:36:00 - INFO - root -   weight_decay: 0.0005
+07/16/2024 17:36:00 - INFO - root -   nesterov: True
+07/16/2024 17:36:00 - INFO - root -   momentum: 0.9
+07/16/2024 17:36:00 - INFO - root -   input_width: 224
+07/16/2024 17:36:00 - INFO - root -   input_height: 224
+07/16/2024 17:36:00 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 17:36:00 - INFO - root -   cosine_lr: False
+07/16/2024 17:36:00 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 17:36:00 - INFO - root -   log_path: training.log
+07/16/2024 17:37:18 - INFO - root -   Hyperparameters:
+07/16/2024 17:37:18 - INFO - root -   data_path: BraTS
+07/16/2024 17:37:18 - INFO - root -   out_path: result
+07/16/2024 17:37:18 - INFO - root -   txt_path: Output
+07/16/2024 17:37:18 - INFO - root -   gpu_id: 0
+07/16/2024 17:37:18 - INFO - root -   num_workers: 4
+07/16/2024 17:37:18 - INFO - root -   epochs: 300
+07/16/2024 17:37:18 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 17:37:18 - INFO - root -   ema_decay: 0.999
+07/16/2024 17:37:18 - INFO - root -   consistency: True
+07/16/2024 17:37:18 - INFO - root -   consistency_rampup: 30
+07/16/2024 17:37:18 - INFO - root -   warm_up_epochs: 10
+07/16/2024 17:37:18 - INFO - root -   batch_size: 128
+07/16/2024 17:37:18 - INFO - root -   lr: 0.0001
+07/16/2024 17:37:18 - INFO - root -   weight_decay: 0.0005
+07/16/2024 17:37:18 - INFO - root -   nesterov: True
+07/16/2024 17:37:18 - INFO - root -   momentum: 0.9
+07/16/2024 17:37:18 - INFO - root -   input_width: 224
+07/16/2024 17:37:18 - INFO - root -   input_height: 224
+07/16/2024 17:37:18 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 17:37:18 - INFO - root -   cosine_lr: False
+07/16/2024 17:37:18 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 17:37:18 - INFO - root -   log_path: training.log
+07/16/2024 17:40:01 - INFO - root -   Hyperparameters:
+07/16/2024 17:40:01 - INFO - root -   data_path: BraTS
+07/16/2024 17:40:01 - INFO - root -   out_path: result
+07/16/2024 17:40:01 - INFO - root -   txt_path: Output
+07/16/2024 17:40:01 - INFO - root -   gpu_id: 0
+07/16/2024 17:40:01 - INFO - root -   num_workers: 4
+07/16/2024 17:40:01 - INFO - root -   epochs: 300
+07/16/2024 17:40:01 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 17:40:01 - INFO - root -   ema_decay: 0.999
+07/16/2024 17:40:01 - INFO - root -   consistency: True
+07/16/2024 17:40:01 - INFO - root -   consistency_rampup: 30
+07/16/2024 17:40:01 - INFO - root -   warm_up_epochs: 10
+07/16/2024 17:40:01 - INFO - root -   batch_size: 128
+07/16/2024 17:40:01 - INFO - root -   lr: 0.0001
+07/16/2024 17:40:01 - INFO - root -   weight_decay: 0.0005
+07/16/2024 17:40:01 - INFO - root -   nesterov: True
+07/16/2024 17:40:01 - INFO - root -   momentum: 0.9
+07/16/2024 17:40:01 - INFO - root -   input_width: 224
+07/16/2024 17:40:01 - INFO - root -   input_height: 224
+07/16/2024 17:40:01 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 17:40:01 - INFO - root -   cosine_lr: False
+07/16/2024 17:40:01 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 17:40:01 - INFO - root -   log_path: training.log
+07/16/2024 17:42:04 - INFO - root -   Hyperparameters:
+07/16/2024 17:42:04 - INFO - root -   data_path: BraTS
+07/16/2024 17:42:04 - INFO - root -   out_path: result
+07/16/2024 17:42:04 - INFO - root -   txt_path: Output
+07/16/2024 17:42:04 - INFO - root -   gpu_id: 0
+07/16/2024 17:42:04 - INFO - root -   num_workers: 4
+07/16/2024 17:42:04 - INFO - root -   epochs: 300
+07/16/2024 17:42:05 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 17:42:05 - INFO - root -   ema_decay: 0.999
+07/16/2024 17:42:05 - INFO - root -   consistency: True
+07/16/2024 17:42:05 - INFO - root -   consistency_rampup: 30
+07/16/2024 17:42:05 - INFO - root -   warm_up_epochs: 10
+07/16/2024 17:42:05 - INFO - root -   batch_size: 128
+07/16/2024 17:42:05 - INFO - root -   lr: 0.0001
+07/16/2024 17:42:05 - INFO - root -   weight_decay: 0.0005
+07/16/2024 17:42:05 - INFO - root -   nesterov: True
+07/16/2024 17:42:05 - INFO - root -   momentum: 0.9
+07/16/2024 17:42:05 - INFO - root -   input_width: 224
+07/16/2024 17:42:05 - INFO - root -   input_height: 224
+07/16/2024 17:42:05 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 17:42:05 - INFO - root -   cosine_lr: False
+07/16/2024 17:42:05 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 17:42:05 - INFO - root -   log_path: training.log
+07/16/2024 17:42:35 - INFO - root -   Hyperparameters:
+07/16/2024 17:42:35 - INFO - root -   data_path: BraTS
+07/16/2024 17:42:35 - INFO - root -   out_path: result
+07/16/2024 17:42:35 - INFO - root -   txt_path: Output
+07/16/2024 17:42:35 - INFO - root -   gpu_id: 0
+07/16/2024 17:42:35 - INFO - root -   num_workers: 4
+07/16/2024 17:42:35 - INFO - root -   epochs: 300
+07/16/2024 17:42:35 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 17:42:35 - INFO - root -   ema_decay: 0.999
+07/16/2024 17:42:35 - INFO - root -   consistency: True
+07/16/2024 17:42:35 - INFO - root -   consistency_rampup: 30
+07/16/2024 17:42:35 - INFO - root -   warm_up_epochs: 10
+07/16/2024 17:42:35 - INFO - root -   batch_size: 128
+07/16/2024 17:42:35 - INFO - root -   lr: 0.0001
+07/16/2024 17:42:35 - INFO - root -   weight_decay: 0.0005
+07/16/2024 17:42:35 - INFO - root -   nesterov: True
+07/16/2024 17:42:35 - INFO - root -   momentum: 0.9
+07/16/2024 17:42:35 - INFO - root -   input_width: 224
+07/16/2024 17:42:35 - INFO - root -   input_height: 224
+07/16/2024 17:42:35 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 17:42:35 - INFO - root -   cosine_lr: False
+07/16/2024 17:42:35 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 17:42:35 - INFO - root -   log_path: training.log
+07/16/2024 17:44:14 - INFO - root -   Hyperparameters:
+07/16/2024 17:44:14 - INFO - root -   data_path: BraTS
+07/16/2024 17:44:14 - INFO - root -   out_path: result
+07/16/2024 17:44:14 - INFO - root -   txt_path: Output
+07/16/2024 17:44:14 - INFO - root -   gpu_id: 0
+07/16/2024 17:44:14 - INFO - root -   num_workers: 4
+07/16/2024 17:44:14 - INFO - root -   epochs: 300
+07/16/2024 17:44:14 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 17:44:14 - INFO - root -   ema_decay: 0.999
+07/16/2024 17:44:14 - INFO - root -   consistency: True
+07/16/2024 17:44:14 - INFO - root -   consistency_rampup: 30
+07/16/2024 17:44:14 - INFO - root -   warm_up_epochs: 10
+07/16/2024 17:44:14 - INFO - root -   batch_size: 128
+07/16/2024 17:44:14 - INFO - root -   lr: 0.0001
+07/16/2024 17:44:14 - INFO - root -   weight_decay: 0.0005
+07/16/2024 17:44:14 - INFO - root -   nesterov: True
+07/16/2024 17:44:14 - INFO - root -   momentum: 0.9
+07/16/2024 17:44:14 - INFO - root -   input_width: 224
+07/16/2024 17:44:14 - INFO - root -   input_height: 224
+07/16/2024 17:44:14 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 17:44:14 - INFO - root -   cosine_lr: False
+07/16/2024 17:44:14 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 17:44:14 - INFO - root -   log_path: training.log
+07/16/2024 17:45:33 - INFO - root -   Hyperparameters:
+07/16/2024 17:45:33 - INFO - root -   data_path: BraTS
+07/16/2024 17:45:33 - INFO - root -   out_path: result
+07/16/2024 17:45:33 - INFO - root -   txt_path: Output
+07/16/2024 17:45:33 - INFO - root -   gpu_id: 0
+07/16/2024 17:45:33 - INFO - root -   num_workers: 4
+07/16/2024 17:45:33 - INFO - root -   epochs: 300
+07/16/2024 17:45:33 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 17:45:33 - INFO - root -   ema_decay: 0.999
+07/16/2024 17:45:33 - INFO - root -   consistency: True
+07/16/2024 17:45:33 - INFO - root -   consistency_rampup: 30
+07/16/2024 17:45:33 - INFO - root -   warm_up_epochs: 10
+07/16/2024 17:45:33 - INFO - root -   batch_size: 128
+07/16/2024 17:45:33 - INFO - root -   lr: 0.0001
+07/16/2024 17:45:33 - INFO - root -   weight_decay: 0.0005
+07/16/2024 17:45:33 - INFO - root -   nesterov: True
+07/16/2024 17:45:33 - INFO - root -   momentum: 0.9
+07/16/2024 17:45:33 - INFO - root -   input_width: 224
+07/16/2024 17:45:33 - INFO - root -   input_height: 224
+07/16/2024 17:45:33 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 17:45:33 - INFO - root -   cosine_lr: False
+07/16/2024 17:45:33 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 17:45:33 - INFO - root -   log_path: training.log
+07/16/2024 17:49:08 - INFO - root -   Hyperparameters:
+07/16/2024 17:49:08 - INFO - root -   data_path: BraTS
+07/16/2024 17:49:08 - INFO - root -   out_path: result
+07/16/2024 17:49:08 - INFO - root -   txt_path: Output
+07/16/2024 17:49:08 - INFO - root -   gpu_id: 0
+07/16/2024 17:49:08 - INFO - root -   num_workers: 4
+07/16/2024 17:49:08 - INFO - root -   epochs: 300
+07/16/2024 17:49:08 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 17:49:08 - INFO - root -   ema_decay: 0.999
+07/16/2024 17:49:08 - INFO - root -   consistency: True
+07/16/2024 17:49:08 - INFO - root -   consistency_rampup: 30
+07/16/2024 17:49:08 - INFO - root -   warm_up_epochs: 10
+07/16/2024 17:49:08 - INFO - root -   batch_size: 128
+07/16/2024 17:49:08 - INFO - root -   lr: 0.0001
+07/16/2024 17:49:08 - INFO - root -   weight_decay: 0.0005
+07/16/2024 17:49:08 - INFO - root -   nesterov: True
+07/16/2024 17:49:08 - INFO - root -   momentum: 0.9
+07/16/2024 17:49:08 - INFO - root -   input_width: 224
+07/16/2024 17:49:08 - INFO - root -   input_height: 224
+07/16/2024 17:49:08 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 17:49:08 - INFO - root -   cosine_lr: False
+07/16/2024 17:49:08 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 17:49:08 - INFO - root -   log_path: training.log
+07/16/2024 17:49:37 - INFO - root -   Epoch [1/300] - Training MSE: 207645.2269 - Validation MSE: 187485.0906
+07/16/2024 17:50:06 - INFO - root -   Epoch [2/300] - Training MSE: 195833.9087 - Validation MSE: 174556.4719
+07/16/2024 17:50:34 - INFO - root -   Epoch [3/300] - Training MSE: 182145.8697 - Validation MSE: 165475.5141
+07/16/2024 17:51:03 - INFO - root -   Epoch [4/300] - Training MSE: 169420.3528 - Validation MSE: 151418.8703
+07/16/2024 17:51:32 - INFO - root -   Epoch [5/300] - Training MSE: 157654.7365 - Validation MSE: 138091.4156
+07/16/2024 17:52:01 - INFO - root -   Epoch [6/300] - Training MSE: 147866.4940 - Validation MSE: 129292.3172
+07/16/2024 17:52:29 - INFO - root -   Epoch [7/300] - Training MSE: 139735.2694 - Validation MSE: 123870.7156
+07/16/2024 17:52:58 - INFO - root -   Epoch [8/300] - Training MSE: 134582.6197 - Validation MSE: 124732.1453
+07/16/2024 17:53:27 - INFO - root -   Epoch [9/300] - Training MSE: 132773.6768 - Validation MSE: 120273.1406
+07/16/2024 17:53:55 - INFO - root -   Epoch [10/300] - Training MSE: 131013.3750 - Validation MSE: 118436.2344
+07/16/2024 17:54:24 - INFO - root -   Epoch [11/300] - Training MSE: 131093.8803 - Validation MSE: 118525.3656
+07/16/2024 17:54:53 - INFO - root -   Epoch [12/300] - Training MSE: 129835.9748 - Validation MSE: 116872.6953
+07/16/2024 17:55:22 - INFO - root -   Epoch [13/300] - Training MSE: 129343.0112 - Validation MSE: 117072.2359
+07/16/2024 17:55:50 - INFO - root -   Epoch [14/300] - Training MSE: 129009.4000 - Validation MSE: 116418.4109
+07/16/2024 17:56:19 - INFO - root -   Epoch [15/300] - Training MSE: 128937.2882 - Validation MSE: 116757.5406
+07/16/2024 17:56:48 - INFO - root -   Epoch [16/300] - Training MSE: 129451.2537 - Validation MSE: 116127.4203
+07/16/2024 17:57:16 - INFO - root -   Epoch [17/300] - Training MSE: 129018.3455 - Validation MSE: 116038.4500
+07/16/2024 17:57:45 - INFO - root -   Epoch [18/300] - Training MSE: 128120.6515 - Validation MSE: 115467.8219
+07/16/2024 17:58:14 - INFO - root -   Epoch [19/300] - Training MSE: 128721.1371 - Validation MSE: 115311.1906
+07/16/2024 17:58:43 - INFO - root -   Epoch [20/300] - Training MSE: 128607.4941 - Validation MSE: 114996.1469
+07/16/2024 17:59:11 - INFO - root -   Epoch [21/300] - Training MSE: 128399.6025 - Validation MSE: 115107.1313
+07/16/2024 17:59:40 - INFO - root -   Epoch [22/300] - Training MSE: 128077.0439 - Validation MSE: 114175.2422
+07/16/2024 18:00:09 - INFO - root -   Epoch [23/300] - Training MSE: 132345.8436 - Validation MSE: 118282.7812
+07/16/2024 18:00:38 - INFO - root -   Epoch [24/300] - Training MSE: 125973.9212 - Validation MSE: 113630.2484
+07/16/2024 18:01:06 - INFO - root -   Epoch [25/300] - Training MSE: 124702.3582 - Validation MSE: 113218.6672
+07/16/2024 18:01:35 - INFO - root -   Epoch [26/300] - Training MSE: 123879.7252 - Validation MSE: 112259.4219
+07/16/2024 18:02:04 - INFO - root -   Epoch [27/300] - Training MSE: 122670.0882 - Validation MSE: 113565.2750
+07/16/2024 18:02:33 - INFO - root -   Epoch [28/300] - Training MSE: 122740.4299 - Validation MSE: 114904.2406
+07/16/2024 18:03:01 - INFO - root -   Epoch [29/300] - Training MSE: 121672.1594 - Validation MSE: 111696.7281
+07/16/2024 18:03:30 - INFO - root -   Epoch [30/300] - Training MSE: 121496.6080 - Validation MSE: 112003.3031
+07/16/2024 18:03:59 - INFO - root -   Epoch [31/300] - Training MSE: 122014.9187 - Validation MSE: 112727.5437
+07/16/2024 18:04:28 - INFO - root -   Epoch [32/300] - Training MSE: 124830.9925 - Validation MSE: 110649.4328
+07/16/2024 18:04:57 - INFO - root -   Epoch [33/300] - Training MSE: 122281.0233 - Validation MSE: 112375.2516
+07/16/2024 18:05:25 - INFO - root -   Epoch [34/300] - Training MSE: 121982.2081 - Validation MSE: 113847.4844
+07/16/2024 18:05:54 - INFO - root -   Epoch [35/300] - Training MSE: 122104.4993 - Validation MSE: 111766.5953
+07/16/2024 18:06:23 - INFO - root -   Epoch [36/300] - Training MSE: 121821.8116 - Validation MSE: 113230.0453
+07/16/2024 18:06:52 - INFO - root -   Epoch [37/300] - Training MSE: 122191.3888 - Validation MSE: 111228.0781
+07/16/2024 18:07:20 - INFO - root -   Epoch [38/300] - Training MSE: 120653.5163 - Validation MSE: 109891.1078
+07/16/2024 18:07:49 - INFO - root -   Epoch [39/300] - Training MSE: 120215.7765 - Validation MSE: 113372.9891
+07/16/2024 18:08:18 - INFO - root -   Epoch [40/300] - Training MSE: 118706.7461 - Validation MSE: 109356.7594
+07/16/2024 18:08:47 - INFO - root -   Epoch [41/300] - Training MSE: 118141.0174 - Validation MSE: 106919.1250
+07/16/2024 18:09:15 - INFO - root -   Epoch [42/300] - Training MSE: 118494.3936 - Validation MSE: 110180.0953
+07/16/2024 18:09:44 - INFO - root -   Epoch [43/300] - Training MSE: 117929.9118 - Validation MSE: 108648.8734
+07/16/2024 18:10:13 - INFO - root -   Epoch [44/300] - Training MSE: 118940.2674 - Validation MSE: 106335.4062
+07/16/2024 18:10:42 - INFO - root -   Epoch [45/300] - Training MSE: 117559.7624 - Validation MSE: 107235.2109
+07/16/2024 18:11:10 - INFO - root -   Epoch [46/300] - Training MSE: 116398.9743 - Validation MSE: 104864.6797
+07/16/2024 18:11:39 - INFO - root -   Epoch [47/300] - Training MSE: 115544.2585 - Validation MSE: 104897.7031
+07/16/2024 18:12:08 - INFO - root -   Epoch [48/300] - Training MSE: 114076.1744 - Validation MSE: 107131.7953
+07/16/2024 18:12:37 - INFO - root -   Epoch [49/300] - Training MSE: 113696.5632 - Validation MSE: 104966.3297
+07/16/2024 18:13:05 - INFO - root -   Epoch [50/300] - Training MSE: 112118.5211 - Validation MSE: 101149.3406
+07/16/2024 18:13:34 - INFO - root -   Epoch [51/300] - Training MSE: 112302.2482 - Validation MSE: 115388.3031
+07/16/2024 18:14:03 - INFO - root -   Epoch [52/300] - Training MSE: 111180.3594 - Validation MSE: 98317.1250
+07/16/2024 18:14:32 - INFO - root -   Epoch [53/300] - Training MSE: 108793.8572 - Validation MSE: 108169.7078
+07/16/2024 18:15:01 - INFO - root -   Epoch [54/300] - Training MSE: 110024.9787 - Validation MSE: 97148.4187
+07/16/2024 18:15:29 - INFO - root -   Epoch [55/300] - Training MSE: 109715.8592 - Validation MSE: 99081.2000
+07/16/2024 18:15:58 - INFO - root -   Epoch [56/300] - Training MSE: 109892.1438 - Validation MSE: 98368.1328
+07/16/2024 18:16:27 - INFO - root -   Epoch [57/300] - Training MSE: 108987.3290 - Validation MSE: 96087.8750
+07/16/2024 18:16:56 - INFO - root -   Epoch [58/300] - Training MSE: 105534.5241 - Validation MSE: 92610.1797
+07/16/2024 18:17:25 - INFO - root -   Epoch [59/300] - Training MSE: 105395.1367 - Validation MSE: 99246.5844
+07/16/2024 18:17:53 - INFO - root -   Epoch [60/300] - Training MSE: 106144.3648 - Validation MSE: 95387.2094
+07/16/2024 18:18:22 - INFO - root -   Epoch [61/300] - Training MSE: 104070.1355 - Validation MSE: 98537.6781
+07/16/2024 18:18:51 - INFO - root -   Epoch [62/300] - Training MSE: 100831.2793 - Validation MSE: 91517.4734
+07/16/2024 18:19:20 - INFO - root -   Epoch [63/300] - Training MSE: 100094.4656 - Validation MSE: 90751.8922
+07/16/2024 18:19:48 - INFO - root -   Epoch [64/300] - Training MSE: 100258.8101 - Validation MSE: 95439.3703
+07/16/2024 18:20:17 - INFO - root -   Epoch [65/300] - Training MSE: 105912.3258 - Validation MSE: 88894.1992
+07/16/2024 18:20:46 - INFO - root -   Epoch [66/300] - Training MSE: 101901.7533 - Validation MSE: 88478.1484
+07/16/2024 18:21:15 - INFO - root -   Epoch [67/300] - Training MSE: 100486.8926 - Validation MSE: 86702.0672
+07/16/2024 18:21:44 - INFO - root -   Epoch [68/300] - Training MSE: 100038.5191 - Validation MSE: 93620.1375
+07/16/2024 18:22:12 - INFO - root -   Epoch [69/300] - Training MSE: 106125.4576 - Validation MSE: 99734.4125
+07/16/2024 18:22:41 - INFO - root -   Epoch [70/300] - Training MSE: 105601.9831 - Validation MSE: 93520.0852
+07/16/2024 18:23:10 - INFO - root -   Epoch [71/300] - Training MSE: 103472.4732 - Validation MSE: 92398.8156
+07/16/2024 18:23:39 - INFO - root -   Epoch [72/300] - Training MSE: 104271.4299 - Validation MSE: 93027.7359
+07/16/2024 18:24:08 - INFO - root -   Epoch [73/300] - Training MSE: 103562.6030 - Validation MSE: 95566.6000
+07/16/2024 18:24:36 - INFO - root -   Epoch [74/300] - Training MSE: 105211.7731 - Validation MSE: 92638.8977
+07/16/2024 18:25:05 - INFO - root -   Epoch [75/300] - Training MSE: 103787.3675 - Validation MSE: 94160.6344
+07/16/2024 18:25:34 - INFO - root -   Epoch [76/300] - Training MSE: 97512.3384 - Validation MSE: 82261.6469
+07/16/2024 18:26:03 - INFO - root -   Epoch [77/300] - Training MSE: 95563.5436 - Validation MSE: 86461.2859
+07/16/2024 18:26:32 - INFO - root -   Epoch [78/300] - Training MSE: 93876.3558 - Validation MSE: 78455.1500
+07/16/2024 18:27:00 - INFO - root -   Epoch [79/300] - Training MSE: 111081.3750 - Validation MSE: 178819.3250
+07/16/2024 18:27:29 - INFO - root -   Epoch [80/300] - Training MSE: 128926.2271 - Validation MSE: 98960.8719
+07/16/2024 18:27:58 - INFO - root -   Epoch [81/300] - Training MSE: 113510.2694 - Validation MSE: 98501.9125
+07/16/2024 18:28:27 - INFO - root -   Epoch [82/300] - Training MSE: 111869.2349 - Validation MSE: 96682.0664
+07/16/2024 18:28:56 - INFO - root -   Epoch [83/300] - Training MSE: 110024.2608 - Validation MSE: 93848.6930
+07/16/2024 18:29:24 - INFO - root -   Epoch [84/300] - Training MSE: 109605.4442 - Validation MSE: 96297.6922
+07/16/2024 18:29:53 - INFO - root -   Epoch [85/300] - Training MSE: 108763.5195 - Validation MSE: 93199.8500
+07/16/2024 18:30:22 - INFO - root -   Epoch [86/300] - Training MSE: 103837.1771 - Validation MSE: 87248.4984
+07/16/2024 18:30:51 - INFO - root -   Epoch [87/300] - Training MSE: 106049.1042 - Validation MSE: 94504.3109
+07/16/2024 18:31:20 - INFO - root -   Epoch [88/300] - Training MSE: 108048.3954 - Validation MSE: 90241.3125
+07/16/2024 18:31:48 - INFO - root -   Epoch [89/300] - Training MSE: 104340.6238 - Validation MSE: 87142.3953
+07/16/2024 18:32:17 - INFO - root -   Epoch [90/300] - Training MSE: 103952.8040 - Validation MSE: 90827.4531
+07/16/2024 18:32:46 - INFO - root -   Epoch [91/300] - Training MSE: 101806.9751 - Validation MSE: 88295.7719
+07/16/2024 18:33:15 - INFO - root -   Epoch [92/300] - Training MSE: 103991.6339 - Validation MSE: 87689.2156
+07/16/2024 18:33:43 - INFO - root -   Epoch [93/300] - Training MSE: 99220.3153 - Validation MSE: 89492.0172
+07/16/2024 18:34:12 - INFO - root -   Epoch [94/300] - Training MSE: 100864.0566 - Validation MSE: 87669.9563
+07/16/2024 18:34:41 - INFO - root -   Epoch [95/300] - Training MSE: 98965.0478 - Validation MSE: 84141.5875
+07/16/2024 18:35:10 - INFO - root -   Epoch [96/300] - Training MSE: 100676.4251 - Validation MSE: 84231.1781
+07/16/2024 18:35:39 - INFO - root -   Epoch [97/300] - Training MSE: 100987.0839 - Validation MSE: 91777.1914
+07/16/2024 18:36:07 - INFO - root -   Epoch [98/300] - Training MSE: 97346.5185 - Validation MSE: 82105.8195
+07/16/2024 18:36:36 - INFO - root -   Epoch [99/300] - Training MSE: 97312.4215 - Validation MSE: 87889.5492
+07/16/2024 18:37:05 - INFO - root -   Epoch [100/300] - Training MSE: 101911.4873 - Validation MSE: 87524.9312
+07/16/2024 18:37:34 - INFO - root -   Epoch [101/300] - Training MSE: 96896.2189 - Validation MSE: 85730.5758
+07/16/2024 18:38:03 - INFO - root -   Epoch [102/300] - Training MSE: 96611.6095 - Validation MSE: 81810.2148
+07/16/2024 18:38:31 - INFO - root -   Epoch [103/300] - Training MSE: 94445.0736 - Validation MSE: 80710.9336
+07/16/2024 18:39:00 - INFO - root -   Epoch [104/300] - Training MSE: 94233.4051 - Validation MSE: 82560.7664
+07/16/2024 18:39:29 - INFO - root -   Epoch [105/300] - Training MSE: 96659.1339 - Validation MSE: 86381.7695
+07/16/2024 18:39:58 - INFO - root -   Epoch [106/300] - Training MSE: 95237.3326 - Validation MSE: 84813.1656
+07/16/2024 18:40:27 - INFO - root -   Epoch [107/300] - Training MSE: 95224.5806 - Validation MSE: 79955.8297
+07/16/2024 18:40:55 - INFO - root -   Epoch [108/300] - Training MSE: 98539.2198 - Validation MSE: 85694.7125
+07/16/2024 18:41:24 - INFO - root -   Epoch [109/300] - Training MSE: 95372.5256 - Validation MSE: 81536.9469
+07/16/2024 18:41:53 - INFO - root -   Epoch [110/300] - Training MSE: 93117.7908 - Validation MSE: 78514.0328
+07/16/2024 18:42:22 - INFO - root -   Epoch [111/300] - Training MSE: 96009.0880 - Validation MSE: 80043.8516
+07/16/2024 18:42:50 - INFO - root -   Epoch [112/300] - Training MSE: 93690.2157 - Validation MSE: 80054.8422
+07/16/2024 18:43:19 - INFO - root -   Epoch [113/300] - Training MSE: 92350.6294 - Validation MSE: 73043.6023
+07/16/2024 18:43:48 - INFO - root -   Epoch [114/300] - Training MSE: 90321.7459 - Validation MSE: 74632.3109
+07/16/2024 18:44:17 - INFO - root -   Epoch [115/300] - Training MSE: 92796.1490 - Validation MSE: 76632.2891
+07/16/2024 18:44:46 - INFO - root -   Epoch [116/300] - Training MSE: 89127.7296 - Validation MSE: 76050.2773
+07/16/2024 18:45:14 - INFO - root -   Epoch [117/300] - Training MSE: 89723.2792 - Validation MSE: 71897.5359
+07/16/2024 18:45:43 - INFO - root -   Epoch [118/300] - Training MSE: 89390.0957 - Validation MSE: 77102.6047
+07/16/2024 18:46:12 - INFO - root -   Epoch [119/300] - Training MSE: 90274.7434 - Validation MSE: 77840.0469
+07/16/2024 18:46:41 - INFO - root -   Epoch [120/300] - Training MSE: 88520.8944 - Validation MSE: 75320.6234
+07/16/2024 18:47:10 - INFO - root -   Epoch [121/300] - Training MSE: 86941.9157 - Validation MSE: 68702.2016
+07/16/2024 18:47:38 - INFO - root -   Epoch [122/300] - Training MSE: 86253.0207 - Validation MSE: 78268.0156
+07/16/2024 18:48:07 - INFO - root -   Epoch [123/300] - Training MSE: 86994.5281 - Validation MSE: 69635.9734
+07/16/2024 18:48:36 - INFO - root -   Epoch [124/300] - Training MSE: 84780.0034 - Validation MSE: 68873.2320
+07/16/2024 18:49:05 - INFO - root -   Epoch [125/300] - Training MSE: 84537.2631 - Validation MSE: 66507.3078
+07/16/2024 18:49:33 - INFO - root -   Epoch [126/300] - Training MSE: 86113.4276 - Validation MSE: 71859.7797
+07/16/2024 18:50:02 - INFO - root -   Epoch [127/300] - Training MSE: 86837.5760 - Validation MSE: 73513.5000
+07/16/2024 18:50:31 - INFO - root -   Epoch [128/300] - Training MSE: 86546.7397 - Validation MSE: 67891.7742
+07/16/2024 18:51:00 - INFO - root -   Epoch [129/300] - Training MSE: 85363.7255 - Validation MSE: 68389.3266
+07/16/2024 18:51:29 - INFO - root -   Epoch [130/300] - Training MSE: 83419.3809 - Validation MSE: 64350.0664
+07/16/2024 18:51:57 - INFO - root -   Epoch [131/300] - Training MSE: 82601.3704 - Validation MSE: 65573.1023
+07/16/2024 18:52:26 - INFO - root -   Epoch [132/300] - Training MSE: 81408.2724 - Validation MSE: 64140.3977
+07/16/2024 18:52:55 - INFO - root -   Epoch [133/300] - Training MSE: 83444.9016 - Validation MSE: 69585.9406
+07/16/2024 18:53:24 - INFO - root -   Epoch [134/300] - Training MSE: 88632.5079 - Validation MSE: 74922.9977
+07/16/2024 18:53:53 - INFO - root -   Epoch [135/300] - Training MSE: 86232.8491 - Validation MSE: 70529.4062
+07/16/2024 18:54:21 - INFO - root -   Epoch [136/300] - Training MSE: 84630.6905 - Validation MSE: 72514.0211
+07/16/2024 18:54:50 - INFO - root -   Epoch [137/300] - Training MSE: 118106.7553 - Validation MSE: 106268.8359
+07/16/2024 18:55:19 - INFO - root -   Epoch [138/300] - Training MSE: 121061.6330 - Validation MSE: 104184.9375
+07/16/2024 18:55:47 - INFO - root -   Epoch [139/300] - Training MSE: 121074.3617 - Validation MSE: 108223.2031
+07/16/2024 18:56:16 - INFO - root -   Epoch [140/300] - Training MSE: 120834.8532 - Validation MSE: 104278.4484
+07/16/2024 18:56:45 - INFO - root -   Epoch [141/300] - Training MSE: 120222.4812 - Validation MSE: 104061.2609
+07/16/2024 18:57:13 - INFO - root -   Epoch [142/300] - Training MSE: 119380.4567 - Validation MSE: 104095.7594
+07/16/2024 18:57:42 - INFO - root -   Epoch [143/300] - Training MSE: 119321.8533 - Validation MSE: 105108.5094
+07/16/2024 18:58:11 - INFO - root -   Epoch [144/300] - Training MSE: 119061.0923 - Validation MSE: 104196.1797
+07/16/2024 18:58:40 - INFO - root -   Epoch [145/300] - Training MSE: 121398.3137 - Validation MSE: 108454.1953
+07/16/2024 18:59:08 - INFO - root -   Epoch [146/300] - Training MSE: 120915.1710 - Validation MSE: 106131.1922
+07/16/2024 18:59:37 - INFO - root -   Epoch [147/300] - Training MSE: 118899.7853 - Validation MSE: 104360.0703
+07/16/2024 19:00:05 - INFO - root -   Epoch [148/300] - Training MSE: 119658.9722 - Validation MSE: 104156.8891
+07/16/2024 19:00:34 - INFO - root -   Epoch [149/300] - Training MSE: 118956.0879 - Validation MSE: 104330.4953
+07/16/2024 19:01:03 - INFO - root -   Epoch [150/300] - Training MSE: 119298.5739 - Validation MSE: 105287.0797
+07/16/2024 19:01:31 - INFO - root -   Epoch [151/300] - Training MSE: 119123.4798 - Validation MSE: 105881.7922
+07/16/2024 19:02:00 - INFO - root -   Epoch [152/300] - Training MSE: 119629.7562 - Validation MSE: 104004.7812
+07/16/2024 19:02:29 - INFO - root -   Epoch [153/300] - Training MSE: 119001.8324 - Validation MSE: 105283.3594
+07/16/2024 19:02:58 - INFO - root -   Epoch [154/300] - Training MSE: 120035.2143 - Validation MSE: 107309.5172
+07/16/2024 19:03:26 - INFO - root -   Epoch [155/300] - Training MSE: 119474.6312 - Validation MSE: 103955.2516
+07/16/2024 19:25:21 - INFO - root -   Hyperparameters:
+07/16/2024 19:25:21 - INFO - root -   data_path: B1
+07/16/2024 19:25:21 - INFO - root -   out_path: result
+07/16/2024 19:25:21 - INFO - root -   txt_path: Output
+07/16/2024 19:25:21 - INFO - root -   gpu_id: 0
+07/16/2024 19:25:21 - INFO - root -   num_workers: 4
+07/16/2024 19:25:21 - INFO - root -   epochs: 300
+07/16/2024 19:25:21 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 19:25:21 - INFO - root -   ema_decay: 0.999
+07/16/2024 19:25:21 - INFO - root -   consistency: True
+07/16/2024 19:25:21 - INFO - root -   consistency_rampup: 30
+07/16/2024 19:25:21 - INFO - root -   warm_up_epochs: 10
+07/16/2024 19:25:21 - INFO - root -   batch_size: 128
+07/16/2024 19:25:21 - INFO - root -   lr: 0.0001
+07/16/2024 19:25:21 - INFO - root -   weight_decay: 0.0005
+07/16/2024 19:25:21 - INFO - root -   nesterov: True
+07/16/2024 19:25:21 - INFO - root -   momentum: 0.9
+07/16/2024 19:25:21 - INFO - root -   input_width: 224
+07/16/2024 19:25:21 - INFO - root -   input_height: 224
+07/16/2024 19:25:21 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 19:25:21 - INFO - root -   cosine_lr: False
+07/16/2024 19:25:21 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 19:25:21 - INFO - root -   log_path: training.log
+07/16/2024 19:29:26 - INFO - root -   Hyperparameters:
+07/16/2024 19:29:26 - INFO - root -   data_path: B1
+07/16/2024 19:29:26 - INFO - root -   out_path: result
+07/16/2024 19:29:26 - INFO - root -   txt_path: Output
+07/16/2024 19:29:26 - INFO - root -   gpu_id: 0
+07/16/2024 19:29:26 - INFO - root -   num_workers: 4
+07/16/2024 19:29:26 - INFO - root -   epochs: 300
+07/16/2024 19:29:26 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 19:29:26 - INFO - root -   ema_decay: 0.999
+07/16/2024 19:29:26 - INFO - root -   consistency: True
+07/16/2024 19:29:26 - INFO - root -   consistency_rampup: 30
+07/16/2024 19:29:26 - INFO - root -   warm_up_epochs: 10
+07/16/2024 19:29:26 - INFO - root -   batch_size: 128
+07/16/2024 19:29:26 - INFO - root -   lr: 0.0001
+07/16/2024 19:29:26 - INFO - root -   weight_decay: 0.0005
+07/16/2024 19:29:26 - INFO - root -   nesterov: True
+07/16/2024 19:29:26 - INFO - root -   momentum: 0.9
+07/16/2024 19:29:26 - INFO - root -   input_width: 224
+07/16/2024 19:29:26 - INFO - root -   input_height: 224
+07/16/2024 19:29:26 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 19:29:26 - INFO - root -   cosine_lr: False
+07/16/2024 19:29:26 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 19:29:26 - INFO - root -   log_path: training.log
+07/16/2024 19:34:57 - INFO - root -   Hyperparameters:
+07/16/2024 19:34:57 - INFO - root -   data_path: B1
+07/16/2024 19:34:57 - INFO - root -   out_path: result
+07/16/2024 19:34:57 - INFO - root -   txt_path: Output
+07/16/2024 19:34:57 - INFO - root -   gpu_id: 0
+07/16/2024 19:34:57 - INFO - root -   num_workers: 4
+07/16/2024 19:34:57 - INFO - root -   epochs: 300
+07/16/2024 19:34:57 - INFO - root -   labeled_ratio: 0.1
+07/16/2024 19:34:57 - INFO - root -   ema_decay: 0.999
+07/16/2024 19:34:57 - INFO - root -   consistency: True
+07/16/2024 19:34:57 - INFO - root -   consistency_rampup: 30
+07/16/2024 19:34:57 - INFO - root -   warm_up_epochs: 10
+07/16/2024 19:34:57 - INFO - root -   batch_size: 128
+07/16/2024 19:34:57 - INFO - root -   lr: 0.0001
+07/16/2024 19:34:57 - INFO - root -   weight_decay: 0.0005
+07/16/2024 19:34:57 - INFO - root -   nesterov: True
+07/16/2024 19:34:57 - INFO - root -   momentum: 0.9
+07/16/2024 19:34:57 - INFO - root -   input_width: 224
+07/16/2024 19:34:57 - INFO - root -   input_height: 224
+07/16/2024 19:34:57 - INFO - root -   model_type: swin_transformer_reg
+07/16/2024 19:34:57 - INFO - root -   cosine_lr: False
+07/16/2024 19:34:57 - INFO - root -   save_path: model_checkpoint.pth
+07/16/2024 19:34:57 - INFO - root -   log_path: training.log
+07/16/2024 19:35:26 - INFO - root -   Epoch [1/300] - Training MSE: 207613.2273 - Validation MSE: 200806.1219
+07/16/2024 19:35:55 - INFO - root -   Epoch [2/300] - Training MSE: 193534.6033 - Validation MSE: 183273.1906
+07/16/2024 19:36:23 - INFO - root -   Epoch [3/300] - Training MSE: 179446.3452 - Validation MSE: 168608.3625
+07/16/2024 19:36:52 - INFO - root -   Epoch [4/300] - Training MSE: 166670.1950 - Validation MSE: 156716.6938
+07/16/2024 19:37:21 - INFO - root -   Epoch [5/300] - Training MSE: 155240.8835 - Validation MSE: 146641.9969
+07/16/2024 19:37:49 - INFO - root -   Epoch [6/300] - Training MSE: 144573.6632 - Validation MSE: 140304.3500
+07/16/2024 19:38:18 - INFO - root -   Epoch [7/300] - Training MSE: 137306.9070 - Validation MSE: 137114.8297

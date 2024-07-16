@@ -4,6 +4,7 @@ import nibabel as nib
 import torch
 from torch.utils.data import Dataset
 import pandas as pd
+import re
 
 class MultiModalDataset(Dataset):
     def __init__(self, root_dir, input_shape, case_names, csv_file, is_train=False, augment=True, only_phenotypic=False):

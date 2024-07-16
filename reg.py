@@ -8,16 +8,17 @@ import torch.optim as optim
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-from utils.dataset import MultiModalDataset  # 自定义的数据集类
+from utils.classification_data import LungDatasetForRegression  # 自定义的数据集类
 from model.SwinTransformerForRegression import SwinTransformerForRegression  # 自定义的模型类
 import matplotlib.pyplot as plt
 import os
+
 
 def main():
 
     parser = argparse.ArgumentParser(description='MultiViewBreastCancerDetection')
 
-    parser.add_argument('--data-path', default='BraTS', type=str, help='data path')
+    parser.add_argument('--data-path', default='B1', type=str, help='data path')
     parser.add_argument('--out-path', default='result', help='directory to output the result')
     parser.add_argument('--txt-path', default='Output', help='directory to output the result')
     parser.add_argument('--gpu-id', default=0, type=int, help='visible gpu id(s)')
@@ -41,6 +42,9 @@ def main():
     parser.add_argument('--save-path', default='model_checkpoint.pth', type=str, help='path to save the model checkpoint')
     parser.add_argument('--log-path', default='training.log', type=str, help='path to save the training log')
 
+    # 获取命令行输入的一些参数
+    args = parser.parse_args()
+
     # 设置日志格式
     logging.basicConfig(
         format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
@@ -52,9 +56,6 @@ def main():
         ]
     )
     logger = logging.getLogger()
-
-    # 获取命令行输入的一些参数
-    args = parser.parse_args()
 
     # Log hyperparameters
     logger.info('Hyperparameters:')
@@ -76,7 +77,7 @@ def main():
         random.seed(444)
 
         train_val_case_names = []
-        case_names_file_path = os.path.join(args.txt_path, 'brats_class.txt')
+        case_names_file_path = os.path.join('brats_class copy.txt')
         with open(case_names_file_path) as f:
             case_names = f.readlines()
             for case_name in case_names:
@@ -190,7 +191,7 @@ def main():
                 if lr_scheduler:
                     lr_scheduler.step()
 
-# Save model checkpoint after each run
+            # Save model checkpoint after each run
             model_save_path = os.path.join(args.out_path, f'model_checkpoint_run_{run_num}.pth')
             torch.save(student_model.state_dict(), model_save_path)
             logger.info(f'Model checkpoint saved at {model_save_path}')

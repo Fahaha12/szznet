@@ -728,7 +728,7 @@ class LungDatasetForRegression(Dataset):
         characteristic = objects[0].getElementsByTagName("characteristics")[0]
 
         # Convert phenotypic data
-        for i, label in enumerate(['Age', 'Extent_of_Resection', 'calcification', 'sphericity', 'margin', 'lobulation', 'spiculation', 'texture']):
+        for i, label in enumerate(['Age', 'Extent_of_Resection', 'VoxelVolume', 'VoxelNum', 'Elongation', 'Flatness', 'MajorAxisLength', 'MinorAxisLength']):
             value = characteristic.getElementsByTagName(label)[0].childNodes[0].data
             phenotypes[i] = float(value) if value != 'NA' else 0.0  # Handle 'NA' by setting default value
 
