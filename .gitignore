@@ -1,0 +1,8 @@
+*.xml
+*.jpg
+*.pth
+*.pyc
+/BraTs
+/pre_train_pth
+/result
+/Output
