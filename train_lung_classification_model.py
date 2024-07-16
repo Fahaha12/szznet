@@ -15,6 +15,7 @@ import numpy as np
 from tqdm import tqdm
 
 from model.lung_classification_model import ModelSwinTransformer, OnlyPhenotypicModel, MultiModalModelSwinTBackbone
+from model.SwinTransformer import SwinTransformerForRegression
 from utils import ramps
 from utils.classification_data import LungDatasetForClassificationWithPhenotypic, \
     lung_classification_with_phenotypic_collate, LungDatasetForSemiSupervisedClassificationWithPhenotypic
@@ -50,7 +51,7 @@ def main():
     parser.add_argument('--momentum', default=0.9, type=float, help='momentum')
     parser.add_argument('--input-width', default=224, type=int, help='the width of input images')
     parser.add_argument('--input-height', default=224, type=int, help='the height of input images')
-    parser.add_argument('--model_type', default='multi_modal', type=str,
+    parser.add_argument('--model_type', default='swin_transformer_reg', type=str,
                         help='the type of model used',
                         choices=['swin_transformer',
                                  'phenotypic',
@@ -241,6 +242,84 @@ def main():
                         logger.info('Avg Val Acc: {:.4f}'.format(avg_val_acc))
                         logger.info('Avg Test Acc: {:.4f}'.format(avg_test_acc))
                 # break
+
+        elif args.model_type == 'swin_transformer_reg':    
+                # 划分训练集和验证集
+            k = 10
+            random.seed(444)
+
+            train_val_case_names = []
+            case_names_file_path = 'brats_class.txt'
+            with open(case_names_file_path) as f:
+                case_names = f.readlines()
+                for case_name in case_names:
+                    case_name = case_name.replace('\n', '')
+                    train_val_case_names.append(case_name)
+
+            random.shuffle(train_val_case_names)
+            test_num = math.ceil(len(train_val_case_names) // 10)
+            test_case_names = train_val_case_names[0: test_num]
+            train_val_case_names = list(set(train_val_case_names) - set(test_case_names))
+
+            val_num = math.ceil(len(train_val_case_names) // k)
+
+            mse_scores = []
+
+            for run_num in range(k):
+                if run_num < k - 1:
+                    val_case_names = train_val_case_names[run_num * val_num: (run_num + 1) * val_num]
+                else:
+                    val_case_names = train_val_case_names[run_num * val_num: len(train_val_case_names)]
+                train_case_names = list(set(train_val_case_names) - set(val_case_names))
+
+                # 创建模型
+                student_model = SwinTransformerForRegression(pretrain_path=r'pre_train_pth/swin_tiny_patch4_window7_224.pth')
+                student_model = student_model.to(device)
+
+                # 定义优化器
+                optimizer = optim.AdamW(student_model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
+
+                # 定义loss函数
+                loss_function = nn.MSELoss()
+
+                # 创建数据集和数据加载器
+                train_dataset = LungDatasetForRegression(args.data_path, case_names=train_case_names, is_train=True)
+                val_dataset = LungDatasetForRegression(args.data_path, case_names=val_case_names, is_train=False)
+                test_dataset = LungDatasetForRegression(args.data_path, case_names=test_case_names, is_train=False)
+
+                train_dataloader = DataLoader(train_dataset, batch_size=args.batch_size, num_workers=args.num_workers, shuffle=True)
+                val_dataloader = DataLoader(val_dataset, batch_size=args.batch_size, num_workers=args.num_workers, shuffle=False)
+                test_dataloader = DataLoader(test_dataset, batch_size=args.batch_size, num_workers=args.num_workers, shuffle=False)
+
+                # 学习率调整策略
+                lr_scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=5, eta_min=1e-5)
+
+                for epoch in range(args.num_epochs):
+                    student_model.train()
+                    for data, target in train_dataloader:
+                        optimizer.zero_grad()
+                        output = student_model(data.to(device))
+                        loss = loss_function(output, target.to(device))
+                        loss.backward()
+                        optimizer.step()
+
+                    # Validation
+                    student_model.eval()
+                    total_val_loss = 0
+                    with torch.no_grad():
+                        for data, target in val_dataloader:
+                            output = student_model(data.to(device))
+                            val_loss = loss_function(output, target.to(device))
+                            total_val_loss += val_loss.item()
+
+                    avg_val_loss = total_val_loss / len(val_dataloader)
+                    logger.info(f'Validation MSE: {avg_val_loss:.4f}')
+                    mse_scores.append(avg_val_loss)
+
+            avg_mse = np.mean(mse_scores)
+            mse_std = np.std(mse_scores)
+            logger.info(f'Average MSE: {avg_mse:.4f}, Std: {mse_std:.4f}')
+
         elif args.model_type == 'phenotypic':
             k = 10
             random.seed(444)
