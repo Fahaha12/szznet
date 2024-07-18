@@ -552,3 +552,5 @@
 07/16/2024 19:37:21 - INFO - root -   Epoch [5/300] - Training MSE: 155240.8835 - Validation MSE: 146641.9969
 07/16/2024 19:37:49 - INFO - root -   Epoch [6/300] - Training MSE: 144573.6632 - Validation MSE: 140304.3500
 07/16/2024 19:38:18 - INFO - root -   Epoch [7/300] - Training MSE: 137306.9070 - Validation MSE: 137114.8297
+07/16/2024 19:38:46 - INFO - root -   Epoch [8/300] - Training MSE: 134562.5914 - Validation MSE: 131744.6766
+07/16/2024 19:39:15 - INFO - root -   Epoch [9/300] - Training MSE: 130516.1307 - Validation MSE: 131672.8188
