@@ -2,7 +2,7 @@
 *.jpg
 *.pth
 *.pyc
-/BraTs
+/dataset
 /pre_train_pth
 /result
 /Output
